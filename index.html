@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Qirat — The Series</title>
+<meta name="description" content="Qirat — Web Developer and Computer Science student. Internships in C and C++, certified in AI, cloud and cybersecurity fundamentals.">
+<meta name="theme-color" content="#140c08">
+<link rel="preload" href="bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro" class="intro" role="dialog" aria-label="Opening">
+  <p class="intro-studio">A Qirat Original</p>
+  <h1 class="intro-title">QIRAT</h1>
+  <p class="intro-sub">The Series</p>
+  <button type="button" class="btn btn-play" id="introPlay">▶ Play</button>
+  <button type="button" class="intro-skip" id="introSkip">Skip intro</button>
+</div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">QIRAT</a>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a href="#home">Home</a><a href="#projects">Originals</a><a href="#journey">My Journey</a>
+    <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-photo"><img src="profile-cutout.png" alt="Qirat" width="843" height="944"></div>
+  <div class="hero-copy">
+    <p class="hero-tag">A Qirat Original</p>
+    <h1>QIRAT</h1>
+    <p class="hero-role">Web Developer &amp; Future Software Engineer</p>
+    <p class="hero-meta"><b>Open to internships</b><span>Computer Science</span><span>2026</span></p>
+    <p class="hero-desc">I design and build modern, responsive and user-focused websites. Two programming internships and a growing list of AI, cloud and cybersecurity certificates, and still learning something new every week.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-play">▶ Watch My Work</a>
+      <a href="#certificates" class="btn btn-ghost">See Certificates</a>
+    </div>
+    <ul class="stats">
+      <li><b>2</b> Internships</li><li><b>14</b> Certificates</li><li><b>4</b> Languages</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="row">
+  <h2>Qirat Originals <small>Projects</small></h2>
+  <div class="rail-wrap">
+    <div class="rail projects">
+      <article class="poster p1"><div class="poster-art"><b>Elegant<br>Jewellery</b></div><h3>Jewellery Website</h3><p>HTML • CSS • JavaScript</p></article>
+      <article class="poster p2"><div class="poster-art code"><code><i>struct</i> Student {<br>&nbsp;&nbsp;int id;<br>&nbsp;&nbsp;char name[50];<br>};<br><i>fopen</i>("data.txt");</code></div><h3>Student Management System</h3><p>C Programming</p></article>
+      <article class="poster p3"><div class="poster-art"><b>Hello,<br>I'm Qirat</b></div><h3>Personal Portfolio</h3><p>HTML • CSS • JavaScript</p></article>
+    </div>
+  </div>
+  <a class="more" href="https://github.com/qirat-programmer" target="_blank" rel="noopener">More on GitHub ↗</a>
+</section>
+
+<section id="journey" class="row alt">
+  <h2>My Journey <small>Seasons</small></h2>
+  <div class="seasons">
+    <article class="ep"><span class="ep-n">S1</span><div><em>20 Mar – 20 Apr 2026</em><h3>C Programming Intern</h3><h4>CodeAlpha · Virtual Internship</h4><p>One month of C programming, hands-on tasks and problem solving.</p><a href="#certificates" data-f="internship">View documents</a></div></article>
+    <article class="ep"><span class="ep-n">S2</span><div><em>1 Jul – 30 Aug 2026</em><h3>C++ Programming Intern</h3><h4>Arch Technologies · Remote, 8 weeks</h4><p>Remote C++ internship and training covering orientation, concepts and hands-on application.</p><a href="#certificates" data-f="internship">View documents</a></div></article>
+    <article class="ep"><span class="ep-n">S3</span><div><em>Now streaming</em><h3>Web Development Diploma</h3><h4>Practical web development &amp; programming</h4><p>Intermediate in Computer Science done. Now building real websites every day.</p></div></article>
+  </div>
+</section>
+
+<section id="skills" class="row">
+  <h2>Skills <small>Genres</small></h2>
+  <div class="genres" id="genres"></div>
+</section>
+
+<section id="certificates" class="row alt">
+  <h2>Certificates <small>14 documents</small></h2>
+  <div class="filters" id="filters"></div>
+  <div class="rail-wrap">
+    <button class="arrow l" type="button" id="prev" aria-label="Previous">‹</button>
+    <div class="rail certs" id="certRail"></div>
+    <button class="arrow r" type="button" id="next" aria-label="Next">›</button>
+  </div>
+</section>
+
+<section id="contact" class="end">
+  <p class="hero-tag">Season 1 · Finale</p>
+  <h2 class="tbc">To be continued…</h2>
+  <p class="end-p">I'm open to internships, collaborations and new projects. Let's create something great together.</p>
+  <div class="links">
+    <a class="btn btn-play" href="mailto:qiratiqbal987@gmail.com">Email Me</a>
+    <a class="btn btn-ghost" href="https://github.com/qirat-programmer" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/qirat-iqbal/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <form id="form" class="form">
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <input name="subject" placeholder="Subject" required>
+    <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+    <button class="btn btn-play" type="submit">Send Message</button>
+    <p id="note" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer class="foot"><p>© 2026 Qirat. All rights reserved.</p><a href="#home">Back to top ↑</a></footer>
+
+<div class="lb" id="lb" hidden><button type="button" class="lb-x" aria-label="Close">×</button><figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure></div>
+<script src="script.js"></script>
+</body>
+</html>
